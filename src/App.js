@@ -1,5 +1,6 @@
 import './App.css';
 import Navigation from './components/Navigation';
+import RegionSelector from './components/RegionSelector';
 import SearchForm from './components/SearchForm';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Navigation />
       <SearchForm />
+      <RegionSelector />
     </div>
   );
 }
