@@ -3,14 +3,14 @@ import { HiOutlineMoon } from 'react-icons/hi';
 
 const Navigation = () => {
     return (
-        <div>
-            <div className='d-flex justify-content-between'>
+        <div className='nav'>
+            <div className='navBar d-flex justify-content-between align-items-center flex-wrap'>
                 <div>
-                    <h3>Where in the world?</h3>
+                    <h3 className='title'>Where in the world?</h3>
                 </div>
-                <div className='d-flex align-items-center '>
-                    <HiOutlineMoon/>
-                    <p>Dark Mode</p>
+                <div className='d-flex gap-2 align-items-center '>
+                    <HiOutlineMoon size='1rem' color='#111517' className='mb-3'/>
+                    <p className='toggleText'>Dark Mode</p>
                 </div>
             </div>
         </div>
