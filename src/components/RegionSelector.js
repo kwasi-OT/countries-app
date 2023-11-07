@@ -3,12 +3,13 @@ import React from 'react'
 const RegionSelector = () => {
     return (
         <div>
-            <select value='Filter By Region'>
-                <option>Africa</option>
-                <option>America</option>
-                <option>Asia</option>
-                <option>Europe</option>
-                <option>Oceania</option>
+            <select>
+                <option>Filter by Region</option>
+                <option value='africa'>Africa</option>
+                <option value='america'>America</option>
+                <option value='asia'>Asia</option>
+                <option value='europe'>Europe</option>
+                <option value='oceania'>Oceania</option>
             </select>
         </div>
     )
