@@ -3,7 +3,7 @@ import { AiOutlineSearch } from 'react-icons/ai';
 
 const SearchForm = () => {
     return (
-        <div>
+        <div className='d-flex'>
             <AiOutlineSearch />
             <input type='text' placeholder='Search for a country…'/>
         </div>
