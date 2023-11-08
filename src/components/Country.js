@@ -10,7 +10,7 @@ import React from 'react';
 
 const Country = () => {
     return (
-        <div>
+        <div className='d-flex flex-column justify-content-center align-items-center gap-2 mt-4'>
             <div>
                 <img src='../assets/Germany.png' alt='German flag'/>
                 <div>
