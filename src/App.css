@@ -97,6 +97,8 @@ img {
   gap: 3rem !important;
   justify-content: center !important;
   align-items: center !important;
+  min-height: 100vh !important;
+  max-height: fit-content !important;
 }
 
 .countryCard {
@@ -110,4 +112,12 @@ img {
 .countryText {
   padding-left: 2rem;
   padding-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .countryList {
+    display: grid !important;
+    grid-template-columns: 16.5rem 16.5rem 16.5rem 16.5rem;
+    grid-gap: 3rem !important;
+  }
 }
