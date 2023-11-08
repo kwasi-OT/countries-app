@@ -16,7 +16,7 @@ body {
 }
 
 .navBar {
-  width: 85%;
+  width: 89%;
   height: 100%;
   margin: 0 auto;
 }
@@ -115,9 +115,30 @@ img {
 }
 
 @media (min-width: 768px) {
+  .appContainer {
+    width: 89%;
+    margin: 0 auto;
+  }
+
   .countryList {
     display: grid !important;
     grid-template-columns: 16.5rem 16.5rem 16.5rem 16.5rem;
     grid-gap: 3rem !important;
+  }
+
+  .searchGroup {
+    width: 100% !important;
+    display: flex !important;
+    margin: 0 auto;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  .searchForm {
+    width: 30rem;
+  }
+
+  select {
+    width: 12.5rem;
   }
 }

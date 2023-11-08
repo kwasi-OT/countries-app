@@ -6,11 +6,15 @@ import SearchForm from './components/SearchForm';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Navigation />
-      <SearchForm />
-      <RegionSelector />
-      <Country />
+      <div className='appContainer'>
+        <div className='searchGroup'>
+          <SearchForm />
+          <RegionSelector />
+        </div>
+        <Country />
+      </div>
     </div>
   );
 }
