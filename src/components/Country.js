@@ -10,7 +10,7 @@ import React from 'react';
 
 const Country = () => {
     return (
-        <div className='d-flex flex-column justify-content-center align-items-center gap-5 mt-4'>
+        <div className='countryList mt-4'>
             <div className='countryCard'>
                 <img src='../assets/Germany.png' alt='German flag'/>
                 <div className='countryText'>

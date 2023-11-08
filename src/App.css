@@ -91,6 +91,14 @@ img {
   height: 10rem;
 }
 
+.countryList {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 3rem !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
 .countryCard {
   width: 16.5rem !important;
   height: 21rem !important;
