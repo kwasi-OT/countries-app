@@ -84,3 +84,8 @@ option:focus {
   width: 55% !important;
   height: 3rem;
 }
+
+img {
+  width: fit-content !important;
+  height: fit-content !important;
+}

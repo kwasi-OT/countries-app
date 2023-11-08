@@ -1,18 +1,18 @@
 import React from 'react';
-import { Germany } from '../assets/Germany.png';
-import { America } from '../assets/America.png';
-import { Brazil } from '../assets/Brazil.png';
-import { Albania } from '../assets/Albania.png';
-import { Iceland } from '../assets/Iceland.png';
-import { Aland } from '../assets/Aland Island.png';
-import { Algeria } from '../assets/Algeria.png';
-import { Afghanistan } from '../assets/Afghanistan.png';
+// import { Germany } from '../assets/Germany.png';
+// import { America } from '../assets/America.png';
+// import { Brazil } from '../assets/Brazil.png';
+// import { Albania } from '../assets/Albania.png';
+// import { Iceland } from '../assets/Iceland.png';
+// import { Aland } from '../assets/Aland Island.png';
+// import { Algeria } from '../assets/Algeria.png';
+// import { Afghanistan } from '../assets/Afghanistan.png';
 
 const Country = () => {
     return (
         <div>
             <div>
-                <img src={Germany} alt='German flag'/>
+                <img src='../assets/Germany.png' alt='German flag'/>
                 <div>
                     <h3>Germany</h3>
                     <p><b>Population:</b>81,770,900</p>
@@ -21,7 +21,7 @@ const Country = () => {
                 </div>
             </div>
             <div>
-                <img src={America} alt='American flag'/>
+                <img src='../assets/America.png' alt='American flag'/>
                 <div>
                     <h3>United States of America</h3>
                     <p><b>Population:</b>323,947,000</p>
@@ -30,7 +30,7 @@ const Country = () => {
                 </div>
             </div>
             <div>
-                <img src={Brazil} alt='Brazilian flag'/>
+                <img src='../assets/Brazil.png' alt='Brazilian flag'/>
                 <div>
                     <h3>Brazil</h3>
                     <p><b>Population:</b>206,135,893</p>
@@ -39,7 +39,7 @@ const Country = () => {
                 </div>
             </div>
             <div>
-                <img src={Iceland} alt='Iceland flag'/>
+                <img src='../assets/Iceland.png' alt='Iceland flag'/>
                 <div>
                     <h3>Iceland</h3>
                     <p><b>Population:</b>334,300</p>
@@ -48,7 +48,7 @@ const Country = () => {
                 </div>
             </div>
             <div>
-                <img src={Afghanistan} alt='Afghan flag'/>
+                <img src='../assets/Afghanistan.png' alt='Afghan flag'/>
                 <div>
                     <h3>Afghanistan</h3>
                     <p><b>Population:</b>27,657,145</p>
@@ -57,7 +57,7 @@ const Country = () => {
                 </div>
             </div>
             <div>
-                <img src={Aland} alt='Aland Islands flag'/>
+                <img src='../assets/Aland Island.png' alt='Aland Islands flag'/>
                 <div>
                     <h3>Aland Islands</h3>
                     <p><b>Population:</b>28,875</p>
@@ -66,7 +66,7 @@ const Country = () => {
                 </div>
             </div>
             <div>
-                <img src={Albania} alt='Albanian flag'/>
+                <img src='../assets/Albania.png' alt='Albanian flag'/>
                 <div>
                     <h3>Albania</h3>
                     <p><b>Population:</b>2,886,026</p>
@@ -75,7 +75,7 @@ const Country = () => {
                 </div>
             </div>
             <div>
-                <img src={Algeria} alt='Algerian flag'/>
+                <img src='../assets/Algeria.png' alt='Algerian flag'/>
                 <div>
                     <h3>Algeria</h3>
                     <p><b>Population:</b>40,400,000</p>
