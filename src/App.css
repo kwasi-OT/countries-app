@@ -68,6 +68,7 @@ select {
   height: 3rem;
   margin-left: 1.2rem !important;
   margin-top: 2.5rem !important;
+  margin-bottom: 0.8rem !important;
   padding: 0 1.2rem 0 1.2rem !important;
   border: none;
   border-radius: 5px;
@@ -86,6 +87,19 @@ option:focus {
 }
 
 img {
-  width: fit-content !important;
-  height: fit-content !important;
+  width: 100%;
+  height: 10rem;
+}
+
+.countryCard {
+  width: 16.5rem !important;
+  height: 21rem !important;
+  border-radius: 5px;
+  background: #FFF;
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
+}
+
+.countryText {
+  padding-left: 2rem;
+  padding-top: 1rem;
 }

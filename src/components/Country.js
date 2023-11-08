@@ -10,77 +10,77 @@ import React from 'react';
 
 const Country = () => {
     return (
-        <div className='d-flex flex-column justify-content-center align-items-center gap-2 mt-4'>
-            <div>
+        <div className='d-flex flex-column justify-content-center align-items-center gap-5 mt-4'>
+            <div className='countryCard'>
                 <img src='../assets/Germany.png' alt='German flag'/>
-                <div>
+                <div className='countryText'>
                     <h3>Germany</h3>
-                    <p><b>Population:</b>81,770,900</p>
-                    <p><b>Region:</b>Europe</p>
-                    <p><b>Capital</b>Berlin</p>
+                    <p><b>Population:</b> 81,770,900</p>
+                    <p><b>Region:</b> Europe</p>
+                    <p><b>Capital</b> Berlin</p>
                 </div>
             </div>
-            <div>
+            <div className='countryCard'>
                 <img src='../assets/America.png' alt='American flag'/>
-                <div>
+                <div className='countryText'>
                     <h3>United States of America</h3>
-                    <p><b>Population:</b>323,947,000</p>
-                    <p><b>Region:</b>Americas</p>
-                    <p><b>Capital</b>Washington, D.C.</p>
+                    <p><b>Population:</b> 323,947,000</p>
+                    <p><b>Region:</b> Americas</p>
+                    <p><b>Capital</b> Washington, D.C.</p>
                 </div>
             </div>
-            <div>
+            <div className='countryCard'>
                 <img src='../assets/Brazil.png' alt='Brazilian flag'/>
-                <div>
+                <div className='countryText'>
                     <h3>Brazil</h3>
-                    <p><b>Population:</b>206,135,893</p>
-                    <p><b>Region:</b>Americas</p>
-                    <p><b>Capital</b>Brasilia</p>
+                    <p><b>Population:</b> 206,135,893</p>
+                    <p><b>Region:</b> Americas</p>
+                    <p><b>Capital</b> Brasilia</p>
                 </div>
             </div>
-            <div>
+            <div className='countryCard'>
                 <img src='../assets/Iceland.png' alt='Iceland flag'/>
-                <div>
+                <div className='countryText'>
                     <h3>Iceland</h3>
-                    <p><b>Population:</b>334,300</p>
-                    <p><b>Region:</b>Europe</p>
-                    <p><b>Capital</b>Reykjavik</p>
+                    <p><b>Population:</b> 334,300</p>
+                    <p><b>Region:</b> Europe</p>
+                    <p><b>Capital</b> Reykjavik</p>
                 </div>
             </div>
-            <div>
+            <div className='countryCard'>
                 <img src='../assets/Afghanistan.png' alt='Afghan flag'/>
-                <div>
+                <div className='countryText'>
                     <h3>Afghanistan</h3>
-                    <p><b>Population:</b>27,657,145</p>
-                    <p><b>Region:</b>Asia</p>
-                    <p><b>Capital</b>Kabul</p>
+                    <p><b>Population:</b> 27,657,145</p>
+                    <p><b>Region:</b> Asia</p>
+                    <p><b>Capital</b> Kabul</p>
                 </div>
             </div>
-            <div>
+            <div className='countryCard'>
                 <img src='../assets/Aland Island.png' alt='Aland Islands flag'/>
-                <div>
+                <div className='countryText'>
                     <h3>Aland Islands</h3>
-                    <p><b>Population:</b>28,875</p>
-                    <p><b>Region:</b>Europe</p>
-                    <p><b>Capital</b>Mariehamn</p>
+                    <p><b>Population:</b> 28,875</p>
+                    <p><b>Region:</b> Europe</p>
+                    <p><b>Capital</b> Mariehamn</p>
                 </div>
             </div>
-            <div>
+            <div className='countryCard'>
                 <img src='../assets/Albania.png' alt='Albanian flag'/>
-                <div>
+                <div className='countryText'>
                     <h3>Albania</h3>
-                    <p><b>Population:</b>2,886,026</p>
-                    <p><b>Region:</b>Europe</p>
-                    <p><b>Capital</b>Tirana</p>
+                    <p><b>Population:</b> 2,886,026</p>
+                    <p><b>Region:</b> Europe</p>
+                    <p><b>Capital</b> Tirana</p>
                 </div>
             </div>
-            <div>
+            <div className='countryCard'>
                 <img src='../assets/Algeria.png' alt='Algerian flag'/>
-                <div>
+                <div className='countryText'>
                     <h3>Algeria</h3>
-                    <p><b>Population:</b>40,400,000</p>
-                    <p><b>Region:</b>Africa</p>
-                    <p><b>Capital</b>Algiers</p>
+                    <p><b>Population:</b> 40,400,000</p>
+                    <p><b>Region:</b> Africa</p>
+                    <p><b>Capital</b> Algiers</p>
                 </div>
             </div>
         </div>
