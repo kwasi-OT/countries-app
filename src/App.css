@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +10,10 @@ body {
   background-color: #FAFAFA !important;
 }
 
+.app {
+  width: 100%;
+}
+
 .nav {
   width: 100%;
   height: 5rem;
@@ -16,8 +22,13 @@ body {
 }
 
 .navBar {
-  width: 89%;
+  width: 88%;
   height: 100%;
+  margin: 0 auto;
+}
+
+.appContainer {
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -36,8 +47,13 @@ body {
   color: #111517;
 }
 
+.searchGroup {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .searchForm {
-  width: 90%;
+  width: 100%;
   height: 3rem;
   margin: 0 auto;
   border-radius: 5px;
@@ -66,7 +82,6 @@ input[type="text"]::placeholder {
 select {
   width: 55%;
   height: 3rem;
-  margin-left: 1.2rem !important;
   margin-top: 2.5rem !important;
   margin-bottom: 0.8rem !important;
   padding: 0 1.2rem 0 1.2rem !important;
@@ -81,10 +96,10 @@ select {
   line-height: 1.25rem; 
 }
 
-option:focus {
+/* option:focus {
   width: 55% !important;
   height: 3rem;
-}
+} */
 
 img {
   width: 100%;
@@ -92,13 +107,13 @@ img {
 }
 
 .countryList {
+  width: 100%;
   display: flex !important;
   flex-direction: column !important;
   gap: 3rem !important;
   justify-content: center !important;
   align-items: center !important;
-  min-height: 100vh !important;
-  max-height: fit-content !important;
+  margin-bottom: 3rem;
 }
 
 .countryCard {
@@ -121,17 +136,20 @@ img {
   }
 
   .countryList {
+    width: 100%;
     display: grid !important;
     grid-template-columns: 16.5rem 16.5rem 16.5rem 16.5rem;
     grid-gap: 3rem !important;
   }
 
   .searchGroup {
-    width: 100% !important;
+    width: 100%;
     display: flex !important;
+    flex-direction: row;
     margin: 0 auto;
     align-items: center !important;
-    justify-content: space-between !important;
+    gap: 32.2rem;
+    /* justify-content: space-between !important; */
   }
 
   .searchForm {

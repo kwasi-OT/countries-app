@@ -6,7 +6,7 @@ import SearchForm from './components/SearchForm';
 
 function App() {
   return (
-    <div>
+    <div className='app'>
       <Navigation />
       <div className='appContainer'>
         <div className='searchGroup'>
