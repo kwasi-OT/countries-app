@@ -10,7 +10,7 @@ const Country = () => {
                     <div className='countryMeta'>
                         <p><b>Population:</b> 81,770,900</p>
                         <p><b>Region:</b> Europe</p>
-                        <p><b>Capital</b> Berlin</p>
+                        <p><b>Capital:</b> Berlin</p>
                     </div>
                 </div>
             </div>
@@ -21,7 +21,7 @@ const Country = () => {
                     <div className='countryMeta'>
                         <p><b>Population:</b> 323,947,000</p>
                         <p><b>Region:</b> Americas</p>
-                        <p><b>Capital</b> Washington, D.C.</p>
+                        <p><b>Capital:</b> Washington, D.C.</p>
                     </div>
                 </div>
             </div>
@@ -32,7 +32,7 @@ const Country = () => {
                     <div className='countryMeta'>
                         <p><b>Population:</b> 206,135,893</p>
                         <p><b>Region:</b> Americas</p>
-                        <p><b>Capital</b> Brasilia</p>
+                        <p><b>Capital:</b> Brasilia</p>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@ const Country = () => {
                     <div className='countryMeta'>
                         <p><b>Population:</b> 334,300</p>
                         <p><b>Region:</b> Europe</p>
-                        <p><b>Capital</b> Reykjavik</p>
+                        <p><b>Capital:</b> Reykjavik</p>
                     </div>
                 </div>
             </div>
@@ -54,7 +54,7 @@ const Country = () => {
                     <div className='countryMeta'>
                         <p><b>Population:</b> 27,657,145</p>
                         <p><b>Region:</b> Asia</p>
-                        <p><b>Capital</b> Kabul</p>
+                        <p><b>Capital:</b> Kabul</p>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@ const Country = () => {
                     <div className='countryMeta'>
                         <p><b>Population:</b> 28,875</p>
                         <p><b>Region:</b> Europe</p>
-                        <p><b>Capital</b> Mariehamn</p>
+                        <p><b>Capital:</b> Mariehamn</p>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@ const Country = () => {
                     <div className='countryMeta'>
                         <p><b>Population:</b> 2,886,026</p>
                         <p><b>Region:</b> Europe</p>
-                        <p><b>Capital</b> Tirana</p>
+                        <p><b>Capital:</b> Tirana</p>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@ const Country = () => {
                     <div className='countryMeta'>
                         <p><b>Population:</b> 40,400,000</p>
                         <p><b>Region:</b> Africa</p>
-                        <p><b>Capital</b> Algiers</p>
+                        <p><b>Capital:</b> Algiers</p>
                     </div>
                 </div>
             </div>
