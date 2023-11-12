@@ -4,7 +4,7 @@ import { HiOutlineMoon } from 'react-icons/hi';
 const Navigation = () => {
     return (
         <div className='nav'>
-            <div className='navBar d-flex justify-content-between align-items-center flex-wrap'>
+            <div className='navBar'>
                 <div>
                     <h3 className='title'>Where in the world?</h3>
                 </div>
