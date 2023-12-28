@@ -5,7 +5,7 @@ import axios  from 'axios';
 
 const apiUrl = 'https://restcountries.com/v3.1/all';
 
-const Country = () => {
+const Countries = () => {
     const[loading, setLoading] = useState(false);
     const[error, setError] = useState(null);
     const[countries, setCountries] = useState([]);
@@ -84,4 +84,4 @@ const Country = () => {
     }
 }
 
-export default Country;
+export default Countries;

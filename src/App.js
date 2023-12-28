@@ -1,5 +1,5 @@
 import './App.css';
-import Country from './components/Country';
+import Countries from './components/Countries';
 import Navigation from './components/Navigation';
 import RegionSelector from './components/RegionSelector';
 import SearchForm from './components/SearchForm';
@@ -13,7 +13,7 @@ function App() {
           <SearchForm />
           <RegionSelector />
         </div>
-        <Country />
+        <Countries />
       </div>
     </div>
   );
