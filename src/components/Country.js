@@ -1,4 +1,8 @@
 import React from 'react';
+import { useEffect, useState } from 'react';
+import { Axios } from 'axios';
+
+const apiUrl = 'https://restcountries.com/v3.1/all'
 
 const Country = () => {
     return (
