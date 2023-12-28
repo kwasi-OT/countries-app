@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import { v4 as uuidv4} from 'uuid';
 import axios  from 'axios';
 
 const apiUrl = 'https://restcountries.com/v3.1/all';
@@ -57,7 +58,6 @@ const Country = () => {
             <div className='countryList mt-4'>
                 {countries.map((country) => {
                     const {
-                        ccn3,
                         name,
                         capital,
                         population,
@@ -66,7 +66,7 @@ const Country = () => {
                     } = country
     
                     return (
-                        <div key={ccn3} className='countryCard'>
+                        <div key={uuidv4()} className='countryCard'>
                             <img src={flags.svg} alt='{name.common} flag'/>
                             <div className='countryText'>
                                 <h3 className='countryName'>{name.common}</h3>
