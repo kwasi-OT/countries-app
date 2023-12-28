@@ -1,10 +1,33 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import { Axios } from 'axios';
+import axios  from 'axios';
 
-const apiUrl = 'https://restcountries.com/v3.1/all'
+const apiUrl = 'https://restcountries.com/v3.1/all';
 
 const Country = () => {
+    const[loading, setLoading] = useState(false);
+    const[error, setError] = useState(null);
+    const[countries, setCountries] = useState([]);
+
+    useEffect(() => {
+        const getCountry = async () => {
+            setLoading(true);
+            try {
+                const response = await axios.get(apiUrl);
+                const data = await response.data;
+                
+                setCountries(data);
+                console.log('Countries Data:', data);
+    
+            } catch (error) {
+                setError('An error occurred while fetching data.');
+            } finally {
+                setLoading(false);
+            }
+        }
+        getCountry();
+    }, [])
+
     return (
         <div className='countryList mt-4'>
             <div className='countryCard'>
