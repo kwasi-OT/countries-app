@@ -19,7 +19,7 @@ const Countries = () => {
                 const data = await response.data;
                 
                 setCountries(data);
-                console.log('Countries Data:', data);
+                // console.log('Countries Data:', data);
     
             } catch (error) {
                 setError('An error occurred while fetching data.');
@@ -67,7 +67,7 @@ const Countries = () => {
                     } = country
     
                     return (
-                        <Link to={`/country/:${name.common}`} key={uuidv4()} className='countryCard'>
+                        <Link to={`/country/${name.common}`} key={uuidv4()} className='countryCard'>
                             <img src={flags.svg} alt='{name.common} flag'/>
                             <div className='countryText'>
                                 <h3 className='countryName'>{name.common}</h3>

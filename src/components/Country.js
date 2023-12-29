@@ -5,10 +5,10 @@ import { v4 as uuidv4 } from 'uuid';
 import { Link, useParams } from 'react-router-dom';
 import { LiaLongArrowAltLeftSolid } from 'react-icons/lia';
 
-const apiUrl = 'https://restcountries.com/v3.1/name/{name}';
+const apiUrl = 'https://restcountries.com/v3.1/name/';
 
 const Country = () => {
-
+    const{ name } = useParams();
     const[loading, setLoading] = useState(false);
     const[error, setError] = useState(null);
     const[country, setCountry] = useState([]);
@@ -17,7 +17,7 @@ const Country = () => {
         const getCountryDetails = async () => {
             setLoading(true);
             try {
-                const response = await axios.get(apiUrl);
+                const response = await axios.get(apiUrl +`${name}`);
                 const data = await response.data;
                 
                 setCountry(data);
@@ -30,7 +30,7 @@ const Country = () => {
             }
         }
         getCountryDetails();
-    }, [])
+    }, [name])
 
 
     if (loading) {
@@ -68,14 +68,14 @@ const Country = () => {
                     <LiaLongArrowAltLeftSolid/>
                     <h5>Back</h5>
                 </Link>
-                {country.map((country) => {
+                {country.map((nation) => {
                     const {
                         name,
                         capital,
                         population,
                         flags,
                         region,
-                    } = country
+                    } = nation
     
                     return (
                         <div key={uuidv4()} className='countryCard'>
