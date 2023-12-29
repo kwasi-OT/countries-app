@@ -2,24 +2,26 @@ import React from 'react'
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import { Link, useParams } from 'react-router-dom';
+import { LiaLongArrowAltLeftSolid } from 'react-icons/lia';
 
-const apiUrl = 'https://restcountries.com/v3.1/all';
+const apiUrl = 'https://restcountries.com/v3.1/name/{name}';
 
 const Country = () => {
 
     const[loading, setLoading] = useState(false);
     const[error, setError] = useState(null);
-    const[countries, setCountries] = useState([]);
+    const[country, setCountry] = useState([]);
 
     useEffect(() => {
-        const getCountry = async () => {
+        const getCountryDetails = async () => {
             setLoading(true);
             try {
                 const response = await axios.get(apiUrl);
                 const data = await response.data;
                 
-                setCountries(data);
-                console.log('Countries Data:', data);
+                setCountry(data);
+                console.log('Country\'s Data:', data);
     
             } catch (error) {
                 setError('An error occurred while fetching data.');
@@ -27,7 +29,7 @@ const Country = () => {
                 setLoading(false);
             }
         }
-        getCountry();
+        getCountryDetails();
     }, [])
 
 
@@ -39,9 +41,13 @@ const Country = () => {
         )
     }
 
-    if (!countries) {
+    if (!country) {
         return(
             <div>
+                <Link to='/' className='btn btn'>
+                    <LiaLongArrowAltLeftSolid/>
+                    <h5>Back</h5>
+                </Link>
                 {error &&
                 <div className='errorMessage d-flex flex-column justify-content-center align-items-center'>
                     <div className='imoji'>😕</div>
@@ -58,7 +64,11 @@ const Country = () => {
     } else {
         return (
             <div className='countryList mt-4'>
-                {countries.map((country) => {
+                <Link to='/'>
+                    <LiaLongArrowAltLeftSolid/>
+                    <h5>Back</h5>
+                </Link>
+                {country.map((country) => {
                     const {
                         name,
                         capital,

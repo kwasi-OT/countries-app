@@ -67,7 +67,7 @@ const Countries = () => {
                     } = country
     
                     return (
-                        <Link to={`/countries/:${name.common}`} key={uuidv4()} className='countryCard'>
+                        <Link to={`/country/:${name.common}`} key={uuidv4()} className='countryCard'>
                             <img src={flags.svg} alt='{name.common} flag'/>
                             <div className='countryText'>
                                 <h3 className='countryName'>{name.common}</h3>
