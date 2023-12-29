@@ -5,7 +5,7 @@ import Countries from './Countries'
 
 const Home = () => {
     return (
-        <div className='app'>
+        <div>
             <div className='appContainer'>
                 <div className='searchGroup'>
                     <SearchForm />
