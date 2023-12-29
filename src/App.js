@@ -1,16 +1,16 @@
 import './App.css';
 import Countries from './components/Countries';
 import Country from './components/Country';
-import Navigation from './components/Navigation';
+import Header from './components/Header';
 import RegionSelector from './components/RegionSelector';
 import SearchForm from './components/SearchForm';
-import { BrowserRouter, Router, Route } from 'react-router-dom';
+import {BrowserRouter as Router, Route } from 'react-router-dom';
 
 function App() {
   return (
     <Router>
       <div className='app'>
-        <Navigation />
+        <Header />
       <Route path='/'>
         <div className='appContainer'>
           <div className='searchGroup'>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { HiOutlineMoon } from 'react-icons/hi';
 
-const Navigation = () => {
+const Header = () => {
     return (
         <div className='nav'>
             <div className='navBar'>
@@ -17,4 +17,4 @@ const Navigation = () => {
     )
 }
 
-export default Navigation;
+export default Header;

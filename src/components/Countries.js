@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { v4 as uuidv4} from 'uuid';
 import axios  from 'axios';
+import { Link } from 'react-router-dom';
 
 const apiUrl = 'https://restcountries.com/v3.1/all';
 
@@ -66,7 +67,7 @@ const Countries = () => {
                     } = country
     
                     return (
-                        <div key={uuidv4()} className='countryCard'>
+                        <Link to={`/countries/:${name.common}`} key={uuidv4()} className='countryCard'>
                             <img src={flags.svg} alt='{name.common} flag'/>
                             <div className='countryText'>
                                 <h3 className='countryName'>{name.common}</h3>
@@ -76,7 +77,7 @@ const Countries = () => {
                                     <p><b>Capital:</b> {capital}</p>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     )
                 } )}
             </div>
