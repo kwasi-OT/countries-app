@@ -71,21 +71,43 @@ const Country = () => {
                 {country.map((nation) => {
                     const {
                         name,
+                        borders,
+                        subregion,
+                        tld,
+                        currencies,
+                        languages,
                         capital,
                         population,
                         flags,
                         region,
                     } = nation
+
+                    const getCurrencies = Object.keys(currencies).join(', ')
+                    const getLanguages = Object.values(languages).join(', ')
+                    const getNativeNamesLastObjKey = Object.keys(nation.name.nativeName).pop();
+                    const nativeNameCommonValue = nation.name.nativeName[getNativeNamesLastObjKey]?.common;
     
                     return (
                         <div key={uuidv4()} className='countryCard'>
                             <img src={flags.svg} alt='{name.common} flag'/>
                             <div className='countryText'>
                                 <h3 className='countryName'>{name.common}</h3>
-                                <div className='countryMeta'>
-                                    <p><b>Population:</b> {population}</p>
-                                    <p><b>Region:</b> {region}</p>
-                                    <p><b>Capital:</b> {capital}</p>
+                                <div>
+                                    <div className='countryMeta'>
+                                        <p><b>Native Name:</b> {nativeNameCommonValue}</p>
+                                        <p><b>Population:</b> {population}</p>
+                                        <p><b>Region:</b> {region}</p>
+                                        <p><b>Sub Region:</b> {subregion}</p>
+                                        <p><b>Capital:</b> {capital}</p>
+                                    </div>
+                                    <div className='countryMeta'>
+                                        <p><b>Top Level Domain:</b> {tld}</p>
+                                        <p><b>Currencies:</b> {getCurrencies}</p>
+                                        <p><b>Languages:</b> {getLanguages}</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p><b>Border Countries:</b> {borders}</p>
                                 </div>
                             </div>
                         </div>

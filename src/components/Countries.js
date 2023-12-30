@@ -4,6 +4,7 @@ import { v4 as uuidv4} from 'uuid';
 import axios  from 'axios';
 import { Link } from 'react-router-dom';
 
+
 const apiUrl = 'https://restcountries.com/v3.1/all';
 
 const Countries = () => {
@@ -83,6 +84,7 @@ const Countries = () => {
             </div>
         )
     }
+
 }
 
 export default Countries;
