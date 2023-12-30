@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { Link, useParams } from 'react-router-dom';
 import { LiaLongArrowAltLeftSolid } from 'react-icons/lia';
+import { ThemeContext } from './ContextTheme';
 
 const apiUrl = 'https://restcountries.com/v3.1/name/';
 
@@ -12,6 +13,7 @@ const Country = () => {
     const[loading, setLoading] = useState(false);
     const[error, setError] = useState(null);
     const[country, setCountry] = useState([]);
+    const{darkTheme} = useContext(ThemeContext);
 
     useEffect(() => {
         const getCountryDetails = async () => {
@@ -63,10 +65,10 @@ const Country = () => {
         )
     } else {
         return (
-            <div className='countryList mt-4'>
-                <Link to='/'>
+            <div className='countryDetails mt-4'>
+                <Link to='/' className={`btn btn-primary ${darkTheme? 'dark':''}`}>
                     <LiaLongArrowAltLeftSolid/>
-                    <h5>Back</h5>
+                    <p className='mt-3'>Back</p>
                 </Link>
                 {country.map((nation) => {
                     const {
@@ -88,19 +90,19 @@ const Country = () => {
                     const nativeNameCommonValue = nation.name.nativeName[getNativeNamesLastObjKey]?.common;
     
                     return (
-                        <div key={uuidv4()} className='countryCard'>
+                        <div key={uuidv4()} className='countryDetailCard'>
                             <img src={flags.svg} alt='{name.common} flag'/>
                             <div className='countryText'>
-                                <h3 className='countryName'>{name.common}</h3>
+                                <h3 className={`countryName ${darkTheme? 'dark':''}`}>{name.common}</h3>
                                 <div>
-                                    <div className='countryMeta'>
+                                    <div className={`countryMeta ${darkTheme? 'dark':''}`}>
                                         <p><b>Native Name:</b> {nativeNameCommonValue}</p>
                                         <p><b>Population:</b> {population}</p>
                                         <p><b>Region:</b> {region}</p>
                                         <p><b>Sub Region:</b> {subregion}</p>
                                         <p><b>Capital:</b> {capital}</p>
                                     </div>
-                                    <div className='countryMeta'>
+                                    <div className={`countryMeta ${darkTheme? 'dark':''}`}>
                                         <p><b>Top Level Domain:</b> {tld}</p>
                                         <p><b>Currencies:</b> {getCurrencies}</p>
                                         <p><b>Languages:</b> {getLanguages}</p>
