@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useEffect, useState } from 'react';
 import { v4 as uuidv4} from 'uuid';
 import axios  from 'axios';
 import { Link } from 'react-router-dom';
+import { ThemeContext } from './ContextTheme';
 
 
 const apiUrl = 'https://restcountries.com/v3.1/all';
@@ -11,6 +12,7 @@ const Countries = () => {
     const[loading, setLoading] = useState(false);
     const[error, setError] = useState(null);
     const[countries, setCountries] = useState([]);
+    const{darkTheme} = useContext(ThemeContext);
 
     useEffect(() => {
         const getCountry = async () => {
@@ -68,11 +70,11 @@ const Countries = () => {
                     } = country
     
                     return (
-                        <Link to={`/country/${name.common}`} key={uuidv4()} className='countryCard'>
+                        <Link to={`/country/${name.common}`} key={uuidv4()} className={`countryCard ${darkTheme? 'dark':''}`}>
                             <img src={flags.svg} alt='{name.common} flag'/>
                             <div className='countryText'>
-                                <h3 className='countryName'>{name.common}</h3>
-                                <div className='countryMeta'>
+                                <h3 className={`countryName ${darkTheme? 'dark':''}`}>{name.common}</h3>
+                                    <div className={`countryMeta ${darkTheme? 'dark':''}`}>
                                     <p><b>Population:</b> {population}</p>
                                     <p><b>Region:</b> {region}</p>
                                     <p><b>Capital:</b> {capital}</p>

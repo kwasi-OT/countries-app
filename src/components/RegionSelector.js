@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ThemeContext } from './ContextTheme'
 
 const RegionSelector = () => {
+    const{darkTheme} = useContext(ThemeContext);
     return (
         <div>
-            <select>
+            <select className={darkTheme? 'dark':''}>
                 <option>Filter by Region</option>
                 <option value='africa'>Africa</option>
                 <option value='america'>America</option>

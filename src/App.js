@@ -9,13 +9,15 @@ import { useContext } from 'react';
 function App() {
   const{darkTheme} = useContext(ThemeContext);
   return (
-    <Router className={`app ${darkTheme? 'dark' : ''}`}>
+    <div className={`app ${darkTheme? 'dark' : ''}`}>
+      <Router>
         <Header />
-      <Routes>
-        <Route exact path='/' element={<Home/>} />
-        <Route exact path='/country/:name' element={<Country />} />
-      </Routes>
-    </Router>
+        <Routes>
+          <Route exact path='/' element={<Home/>} />
+          <Route exact path='/country/:name' element={<Country />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
