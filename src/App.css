@@ -253,6 +253,10 @@ img {
   line-height: 1rem;
 }
 
+.toggle {
+  cursor: pointer;
+}
+
 
 /* destop display begin */
 
