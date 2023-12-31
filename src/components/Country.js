@@ -90,9 +90,9 @@ const Country = () => {
                     const nativeNameCommonValue = nation.name.nativeName[getNativeNamesLastObjKey]?.common;
     
                     return (
-                        <div key={uuidv4()} className='countryDetailCard'>
+                        <div key={uuidv4()} className='countryDetailsCard'>
                             <img src={flags.svg} alt='{name.common} flag'/>
-                            <div className='countryText'>
+                            <div className='countryDetailsText'>
                                 <h3 className={`countryName ${darkTheme? 'dark':''}`}>{name.common}</h3>
                                 <div>
                                     <div className={`countryMeta ${darkTheme? 'dark':''}`}>
