@@ -257,6 +257,10 @@ img {
   cursor: pointer;
 }
 
+.borders.dark {
+  color: #fff;
+}
+
 
 /* destop display begin */
 

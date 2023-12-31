@@ -108,7 +108,7 @@ const Country = () => {
                                         <p><b>Languages:</b> {getLanguages}</p>
                                     </div>
                                 </div>
-                                <div>
+                                <div className={`borders ${darkTheme? 'dark':''}`}>
                                     <p><b>Border Countries:</b> {borders}</p>
                                 </div>
                             </div>
