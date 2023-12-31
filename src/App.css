@@ -184,7 +184,7 @@ img {
   line-height: 1.625rem;
 }
 
-.countryName.dark, .countryMeta.dark {
+.countryName.dark, .countryMeta.dark, .countryMeta1.dark {
   color: #FFF;
 }
 
@@ -243,6 +243,14 @@ img {
   padding-left: 0.3rem;
   padding-top: 1rem;
   padding-bottom: 1rem !important;
+}
+
+.countryMeta1 {
+  color: #111517;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  line-height: 1rem;
 }
 
 
