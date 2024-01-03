@@ -65,7 +65,7 @@ const Country = () => {
         )
     } else {
         return (
-            <div className='countryDetails mt-4'>
+            <div className='countryDetails mt-5'>
                 <Link to='/' className={`btn btn-primary ${darkTheme? 'dark':''}`}>
                     <LiaLongArrowAltLeftSolid/>
                     <p className='mt-3'>Back</p>
@@ -94,7 +94,7 @@ const Country = () => {
                             <img src={flags.svg} alt='{name.common} flag'/>
                             <div className='countryDetailsText'>
                                 <h3 className={`countryName mt-3 ${darkTheme? 'dark':''}`}>{name.common}</h3>
-                                <div className='d-flex flex-column justify-between'>
+                                <div className='metaContainer'>
                                     <div className={`countryMeta ${darkTheme? 'dark':''}`}>
                                         <p><b>Native Name:</b> {nativeNameCommonValue}</p>
                                         <p><b>Population:</b> {population}</p>
@@ -102,7 +102,7 @@ const Country = () => {
                                         <p><b>Sub Region:</b> {subregion}</p>
                                         <p><b>Capital:</b> {capital}</p>
                                     </div>
-                                    <div className={`countryMeta1 mt-3 ${darkTheme? 'dark':''}`}>
+                                    <div className={`countryMeta1 ${darkTheme? 'dark':''}`}>
                                         <p><b>Top Level Domain:</b> {tld}</p>
                                         <p><b>Currencies:</b> {getCurrencies}</p>
                                         <p><b>Languages:</b> {getLanguages}</p>
