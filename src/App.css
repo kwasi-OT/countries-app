@@ -311,7 +311,7 @@ img {
   .countryDetails {
     width: 88%;
     min-height: 100vh;
-    max-height: fit-content;
+    height: fit-content;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -320,16 +320,23 @@ img {
 
   .countryDetailsCard {
     width: 100%;
+    min-height: 60vh;
+    height: fit-content;
     margin: 0 auto;
     display: flex;
     align-items: center !important;
     justify-content: space-between !important;
-    margin-top: -4rem;
+    gap: 3rem;
+  }
+
+  .flag {
+    width: 34.982rem !important;
+    height: 20.198rem !important;
   }
 
   .countryDetailsCard img {
-    width: 34.982rem !important;
-    height: 30.198rem !important;
+    width: 100%;
+    height: 100%;
     
   }
 

@@ -91,7 +91,9 @@ const Country = () => {
     
                     return (
                         <div key={uuidv4()} className='countryDetailsCard'>
-                            <img src={flags.svg} alt='{name.common} flag'/>
+                            <div className='flag'>
+                                <img src={flags.svg} alt='{name.common} flag'/>
+                            </div>
                             <div className='countryDetailsText'>
                                 <h3 className={`countryName mt-3 ${darkTheme? 'dark':''}`}>{name.common}</h3>
                                 <div className='metaContainer'>
