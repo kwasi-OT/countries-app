@@ -228,6 +228,15 @@ img {
   color: #FFF !important;
 }
 
+.loadingCon.dark {
+  background-color: #2B3844 !important;
+  color: #FFF !important;
+}
+
+.loading.dark {
+  color: #FFF !important;
+}
+
 .countryDetailsCard {
   width: 100%;
   margin: 0 auto;

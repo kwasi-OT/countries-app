@@ -23,7 +23,7 @@ const Country = () => {
                 const data = await response.data;
                 
                 setCountry(data);
-                console.log('Country\'s Data:', data);
+                // console.log('Country\'s Data:', data);
     
             } catch (error) {
                 setError('An error occurred while fetching data.');
@@ -37,8 +37,8 @@ const Country = () => {
 
     if (loading) {
         return(
-            <div className='d-flex flex-column justify-content-center align-items-center mt-10'>
-                <h1 className='loading'>Loading...</h1>
+            <div className={`loadingCon ${darkTheme? 'dark': ''} d-flex flex-column justify-content-center align-items-center mt-10`}>
+                <h1 className={`loading ${darkTheme? 'dark': ''}`}>Loading...</h1>
             </div>
         )
     }
