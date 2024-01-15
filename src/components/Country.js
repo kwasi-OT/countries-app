@@ -111,7 +111,16 @@ const Country = () => {
                                     </div>
                                 </div>
                                 <div className={`borders ${darkTheme? 'dark':''}`}>
-                                    <p><b>Border Countries:</b> {borders}</p>
+                                    <p><b>Border Countries:</b></p>
+                                    <Link to={`/country/${name}`} className={`bordersList ${darkTheme? 'dark':''}`}>
+                                        {borders.map((border) => {
+                                            return (
+                                                <ul key={border}>
+                                                    <li className={` ${darkTheme? 'dark':''}`}>{border}</li>
+                                                </ul>
+                                            )
+                                        })}
+                                    </Link>
                                 </div>
                             </div>
                         </div>
