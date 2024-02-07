@@ -420,9 +420,16 @@ img {
 
   .borders {
     display: flex;
+    justify-content: space-between;
+    width: 100% !important;
+  }
+
+  .borders p {
+    width: 25% !important;
   }
 
   .bordersList {
+    width: 65% !important;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -430,7 +437,7 @@ img {
 
   .bordersList ul {
     
-    margin: -0.2rem;
+    margin: 0 -0.6rem;
     font-size: 0.75rem;
   }
 

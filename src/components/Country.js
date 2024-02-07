@@ -23,7 +23,7 @@ const Country = () => {
                 const data = await response.data;
                 
                 setCountry(data);
-                // console.log('Country\'s Data:', data);
+                console.log('Country\'s Data:', data);
     
             } catch (error) {
                 setError('An error occurred while fetching data.');
@@ -112,7 +112,7 @@ const Country = () => {
                                 </div>
                                 <div className={`borders ${darkTheme? 'dark':''}`}>
                                     <p><b>Border Countries:</b></p>
-                                    <Link to={`/country/${name}`} className={`bordersList ${darkTheme? 'dark':''}`}>
+                                    <Link to={`/country/${name.common}`} className={`bordersList ${darkTheme? 'dark':''}`}>
                                         {borders.map((border) => {
                                             return (
                                                 <ul key={border}>
